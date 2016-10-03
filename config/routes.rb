@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => 'students#new'
+  root :to => redirect('/students/new')
 
   get '/teachers/new', to: 'teachers#new'
   post '/teachers', to: 'teachers#create'
